@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findMinMax() {
+            var myinputarr = [];
+            var size = 5;
+
+            for (var a = 0; a < size; a++) {
+                myinputarr[a] = prompt('Enter array Element ' + (a + 1));
+            }
+
+            let minValue = Math.min(...myinputarr);
+            let maxValue = Math.max(...myinputarr);
+
+            console.log(myinputarr);
+            console.log("Minimum salary is:" + minValue);
+            console.log("Maximum salary is:" + maxValue);
+        }
+        findMinMax()
+    </script>
+</body>
+</html>
