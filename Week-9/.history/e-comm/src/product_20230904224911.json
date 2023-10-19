@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "iPhone 14",
+      "price": 120000,
+      "image": "iphone14.jpg",
+      "discount": 10,
+      "details": "Latest line-up in Apple"
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S23 Ultra",
+      "price": 99000,
+      "image": "S23ultra.jpeg",
+      "discount": 10,
+      "details": "Latest line-up in Samsung"
+    },
+    {
+      "id": 3,
+      "name": "Macbook",
+      "price": 157000,
+      "image": "macbook.jpeg",
+      "discount": 20,
+      "details": "Latest line-up in Apple"
+    },
+    {
+      "id": 4,
+      "name": "Apple Watch",
+      "price": 99000,
+      "image": ".jpeg",
+      "discount": 10,
+      "details": "Latest line-up in Apple"
+    },
+    {
+      "id": 5,
+      "name": "Apple AirPods pro",
+      "price": 99000,
+      "image": "S23ultra.jpeg",
+      "discount": 10,
+      "details": "Latest line-up in Apple"
+    },
+    {
+      "id": 6,
+      "name": "iPad",
+      "price": 99000,
+      "image": "S23ultra.jpeg",
+      "discount": 10,
+      "details": "Latest line-up in Apple"
+    }
+]

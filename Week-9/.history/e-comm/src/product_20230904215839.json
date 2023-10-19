@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "iPhone 14",
+      "price": 120000,
+      "image": "img/iphone14.jpg",
+      "discount": 10,
+      "details": 'Latest line-up in Apple',
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S23 Ultra",
+      "price": 99000,
+      "image": "img/S23ultra.jpeg",
+      "discount": 10,
+      "details": 'Latest line-up in Samsung',
+    },
+    {
+      "id": 3,
+      "name": "Macbook",
+      price: 157000,
+      image: "img/macbook.jpeg",
+      discount: 20,
+      details: 'Latest line-up in Apple',
+    }
+]
