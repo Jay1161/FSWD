@@ -1,0 +1,21 @@
+/* product.css */
+#product-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productcard {
+  flex: 0 0 calc(33.33% - 20px);
+  /* Adjust the width as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.productcard img {
+  max-width: 100%;
+  border-radius: 2rem;
+  border: 2px solid orange;
+}

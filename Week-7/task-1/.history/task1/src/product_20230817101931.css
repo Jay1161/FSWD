@@ -1,0 +1,39 @@
+#products {
+    margin: 0%;
+    padding: 0%;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(246, 8, 8, 0.815);
+    max-width: 300px;
+    margin: 2%;
+    font-family: 'menlo';
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    color: grey;
+    font-size: 22px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #1b507b;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+body {
+    background-color: #282c34;
+    float: left;
+}
+
+productcard{
+    background-color: white;
+}

@@ -1,0 +1,104 @@
+import './product.css';
+import React, { useState } from 'react';
+
+function ProductList() {
+  const products = [
+    {
+      id: 1,
+      name: 'iPhone 14',
+      price: 120000,
+      image: 'img/iphone14.jpg',
+    },
+    {
+      id: 2,
+      name: 'Samsung Galaxy S23 Ultra',
+      price: 99000,
+      image: 'img/S23ultra.jpeg',
+    },
+    {
+      id: 3,
+      name: 'Macbook',
+      price: 157000,
+      image: 'img/macbook.jpeg',
+    },
+  ];
+
+//   const ProductCard = ({ product }) => {
+//     const [isEnabled, setIsEnabled] = useState(false);
+
+//     const toggleEnable = () => {
+//       setIsEnabled(!isEnabled);
+//     };
+
+//     return (
+//       <div className="productcard">
+//         <img src={product.image} alt={product.name} style={{ borderRadius: '2rem' }} />
+//         <h2>{product.name}</h2>
+//         <p>RS {product.price}</p>
+//         <input type="checkbox" checked={isEnabled} onChange={toggleEnable} />
+//         <label htmlFor={`enable-button-${product.id}`}>
+//           {isEnabled ? 'Enabled' : 'Disabled'}
+//         </label>
+//         <button disabled={!isEnabled}>Add to cart</button>
+//       </div>
+//     );
+//   };
+
+//   return (
+//     <div className="productlist">
+//       {products.map((product) => (
+//         <ProductCard key={product.id} product={product} />
+//       ))}
+//     </div>
+//   );
+// }
+
+// export default ProductList;
+
+const ProductCard = ({ product }) => {
+    const [isEnabled, setIsEnabled] = useState(false);
+    const [counter, setCounter] = useState(0);
+
+    const toggleEnable = () => {
+      setIsEnabled(!isEnabled);
+    };
+
+    const incrementCounter = () => {
+      setCounter(counter + 1);
+    };
+
+    const decrementCounter = () => {
+      if (counter > 0) {
+        setCounter(counter - 1);
+      }
+    };
+
+    return (
+      <div className="productcard">
+        {/* ... existing JSX for the product card */}
+        <input type="checkbox" checked={isEnabled} onChange={toggleEnable} />
+        <label htmlFor={`enable-button-${product.id}`}>
+          {isEnabled ? 'Enabled' : 'Disabled'}
+        </label>
+        <button disabled={!isEnabled} onClick={incrementCounter}>
+          Add to cart
+        </button>
+        <div className="counter">
+          <button onClick={decrementCounter}>-</button>
+          <span>{counter}</span>
+          <button onClick={incrementCounter}>+</button>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="productlist">
+      {products.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
+  );
+}
+
+export default ProductList;//

@@ -1,0 +1,16 @@
+{
+  "folders": [
+    "Jay11",
+    "Jay22"
+  ],
+  "files": [
+    {
+      "name": "file1.txt",
+      "folder": "Jay11"
+    },
+    {
+      "name": "file2.txt",
+      "folder": "Jay22"
+    }
+  ]
+}
